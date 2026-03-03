@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV e portfolio di Nome Cognome — Ruolo Professionale. Scopri esperienza, competenze e progetti.">
+  <meta name="keywords" content="CV, portfolio, Nome Cognome, sviluppatore, designer, professionista">
+  <meta name="author" content="Nome Cognome">
+  <title>Salavtore Bonavita — Web Developer | CV & Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__brand" aria-label="Torna inizio">
+        <span class="navbar__badge">
+          <img src="io.JPG" alt="" />
+          <span class="navbar__badge-fallback" aria-hidden="true">NC</span>
+        </span>
+        <span class="navbar__logo">Salvatore Bonavita</span>
+      </a>
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar__nav" id="navbar-nav" aria-label="Navigazione principale">
+        <a href="#about">About</a>
+        <a href="#skills">Competenze</a>
+        <a href="#experience">Esperienza</a>
+        <a href="#projects">Progetti</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambia tema chiaro/scuro">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__bg">
+        <div class="hero__gradient" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+        <div class="hero__particles" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="hero__shape hero__shape--1" aria-hidden="true"></div>
+        <div class="hero__shape hero__shape--2" aria-hidden="true"></div>
+        <div class="hero__shape hero__shape--3" aria-hidden="true"></div>
+      </div>
+      <div class="hero__content container">
+        <div class="hero__left">
+          <div class="hero__badge" data-animate>
+            <span class="hero__badge-ring" aria-hidden="true"></span>
+            <span class="hero__badge-glow" aria-hidden="true"></span>
+            <span class="hero__badge-inner">
+              <img src="io.JPG" alt="" />
+              <span class="hero__badge-fallback" aria-hidden="true">NC</span>
+            </span>
+          </div>
+        </div>
+        <div class="hero__right">
+          <p class="hero__greeting" data-animate>Ciao, sono</p>
+          <h1 class="hero__title" id="hero-title" data-animate>
+            <span class="hero__name">Salvatore Bonavita</span>
+            <span class="hero__role">— Frontend Developer</span>
+          </h1>
+          <p class="hero__meta" data-animate>React · TypeScript · Figma · CSS-in-JS · UI/UX</p>
+          <p class="hero__subtitle" data-animate>
+            Creo soluzioni digitali che uniscono design e funzionalità.
+            Aiuto aziende a crescere con prodotti user-centered e tecnologie moderne.
+          </p>
+          <div class="hero__cta" data-animate>
+            <a href="#contact" class="btn btn--primary">Contattami</a>
+            <a href="C.v%20Salvatore%20Bonavita.pdf" class="btn btn--secondary" download="C.v Salvatore Bonavita.pdf">Scarica CV PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about__flow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="about__header">
+          <h2 class="section__title" id="about-title" data-animate>Chi sono</h2>
+          <p class="about__intro" data-animate>Passione per il digitale, focus sui risultati</p>
+        </div>
+        <div class="about__grid">
+          <div class="about__text" data-animate>
+            <div class="about__lead-wrap">
+              <p class="about__lead">
+                Sono un professionista con esperienza in <strong>design e sviluppo</strong>.
+                Trasformo idee in prodotti digitali usabili e scalabili, mettendo al centro
+                l’esperienza utente e i risultati di business.
+              </p>
+            </div>
+            <p class="about__secondary">
+              Collaboro con team e stakeholder per definire strategie, progettare interfacce
+              e implementare soluzioni tecniche solide.
+            </p>
+          </div>
+          <div class="about__value" data-animate>
+            <h3 class="about__value-title">
+              <span class="about__value-icon" aria-hidden="true"></span>
+              Come posso aiutare la tua azienda
+            </h3>
+            <ul class="about__list">
+              <li><span>Progettazione e delivery di prodotti digitali end-to-end</span></li>
+              <li><span>Miglioramento di conversioni e metriche UX con dati e test</span></li>
+              <li><span>Comunicazione chiara con team tecnici e non tecnici</span></li>
+              <li><span>Adozione di best practice e strumenti moderni</span></li>
+            </ul>
+            <a href="#" class="about__link link link--arrow" target="_blank" rel="noopener">Vedi portfolio completo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="skills__header">
+          <h2 class="section__title" id="skills-title" data-animate>Competenze</h2>
+          <p class="skills__intro" data-animate>Tool, stack e attitudini che uso ogni giorno</p>
+        </div>
+        <div class="skills__grid">
+          <div class="skills__card skills__card--tech" data-animate>
+            <div class="skills__card-head">
+              <span class="skills__icon skills__icon--tech" aria-hidden="true"></span>
+              <h3 class="skills__subtitle">Competenze tecniche</h3>
+            </div>
+            <ul class="skills__bars">
+              <li>
+                <div class="skills__bar-label">
+                  <span class="skills__label">HTML / CSS</span>
+                  <span class="skills__pct" aria-hidden="true">90%</span>
+                </div>
+                <div class="skills__track"><div class="skills__fill" style="--p: 90"></div></div>
+              </li>
+              <li>
+                <div class="skills__bar-label">
+                  <span class="skills__label">JavaScript</span>
+                  <span class="skills__pct" aria-hidden="true">85%</span>
+                </div>
+                <div class="skills__track"><div class="skills__fill" style="--p: 85"></div></div>
+              </li>
+              <li>
+                <div class="skills__bar-label">
+                  <span class="skills__label">UX/UI Design</span>
+                  <span class="skills__pct" aria-hidden="true">88%</span>
+                </div>
+                <div class="skills__track"><div class="skills__fill" style="--p: 88"></div></div>
+              </li>
+              <li>
+                <div class="skills__bar-label">
+                  <span class="skills__label">React</span>
+                  <span class="skills__pct" aria-hidden="true">80%</span>
+                </div>
+                <div class="skills__track"><div class="skills__fill" style="--p: 80"></div></div>
+              </li>
+              <li>
+                <div class="skills__bar-label">
+                  <span class="skills__label">Figma / Design tool</span>
+                  <span class="skills__pct" aria-hidden="true">92%</span>
+                </div>
+                <div class="skills__track"><div class="skills__fill" style="--p: 92"></div></div>
+              </li>
+            </ul>
+          </div>
+          <div class="skills__card skills__card--soft" data-animate>
+            <div class="skills__card-head">
+              <span class="skills__icon skills__icon--soft" aria-hidden="true"></span>
+              <h3 class="skills__subtitle">Soft skills</h3>
+            </div>
+            <ul class="skills__tags">
+              <li><span>Comunicazione</span></li>
+              <li><span>Problem solving</span></li>
+              <li><span>Teamwork</span></li>
+              <li><span>Gestione progetti</span></li>
+              <li><span>Pensiero critico</span></li>
+              <li><span>Adattabilità</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="experience__header">
+          <h2 class="section__title" id="experience-title" data-animate>Esperienza</h2>
+          <p class="experience__intro" data-animate>Percorso professionale e risultati raggiunti nel tempo</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item" data-animate>
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-bar"></div>
+              <div class="timeline__head">
+                <span class="timeline__date">
+                  <span class="timeline__date-from">2025</span>
+                  <span class="timeline__date-sep">—</span>
+                  <span class="timeline__date-to">Presente</span>
+                </span>
+                <span class="timeline__badge">Attuale</span>
+              </div>
+              <h3 class="timeline__org">Freelance</h3>
+              <p class="timeline__role">Ruolo Frontend Developer / Product Designer</p>
+              <ul class="timeline__bullets">
+                <li>Guidato il redesign della piattaforma principale, +25% conversioni</li>
+                <li>Implementato design system condiviso per 3 prodotti</li>
+                <li>Sviluppo di siti web responsive e accessibili</li>
+                <li>Implementazione di funzionalità interattive</li>
+                <li>Integrazione di API e sistemi di pagamento</li>
+                <li>Ottimizzazione per SEO e performance</li>
+                <li>Supporto continuo e manutenzione dei siti</li>
+                <li>Utilizzo di strumenti come WordPress o Shopify</li>
+                <li>Figma per la progettazione dei design</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item" data-animate>
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-bar"></div>
+              <div class="timeline__head">
+                <span class="timeline__date">
+                  <span class="timeline__date-from">2023</span>
+                  <span class="timeline__date-sep">—</span>
+                  <span class="timeline__date-to">2025</span>
+                </span>
+              </div>
+              <h3 class="timeline__org">Negozio di abbigliamento</h3>
+              <p class="timeline__role">Ruolo di E-commerce Specialist</p>
+              <ul class="timeline__bullets">
+                <li>Carica e aggiorna prodotti (descrizioni, prezzi, immagini)</li>
+                <li>Controllo disponibilità e catalogo</li>
+                <li>Coordina logistica e spedizioni</li>
+                <li>Lavora su SEO per migliorare la visibilità</li>
+                <li>Gestione pagamenti online e supporto clienti</li>
+                <li>Collaborazione con il team per migliorare l'esperienza di acquisto</li>
+                <li>Utilizzo di piattaforme come Shopify, WooCommerce o Prestashop.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item" data-animate>
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-bar"></div>
+              <div class="timeline__head">
+                <span class="timeline__date">
+                  <span class="timeline__date-from">2020</span>
+                  <span class="timeline__date-sep">—</span>
+                  <span class="timeline__date-to">2023</span>
+                </span>
+              </div>
+              <h3 class="timeline__org">Laurea Triennale in Scienze Giuridiche</h3>
+              <p class="timeline__role">Università Uninettuno di Roma</p>
+              <ul class="timeline__bullets">
+                <li>Voto di laurea: 89/110</li>
+                <li>Diritto pubblico e giuridica</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item" data-animate>
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__card-bar"></div>
+              <div class="timeline__head">
+                <span class="timeline__date">
+                  <span class="timeline__date-from">2018</span>
+                  <span class="timeline__date-sep">—</span>
+                  <span class="timeline__date-to">2025</span>
+                </span>
+              </div>
+              <h3 class="timeline__org">Daboss Brands Sportivo</h3>
+              <p class="timeline__role">Torneo 3v3 di basket</p>
+              <ul class="timeline__bullets">
+                <li>Creazione al torneo 3v3 di basket</li>
+                <li>Gestione del torneo</li>
+                <li>Gestione del sito web</li>
+                <li>Gestione delle pagine social</li>
+                <li>Creazione del logo</li>
+              </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section__title" id="projects-title" data-animate>Progetti</h2>
+        <div class="projects__grid">
+          <article class="project-card" data-animate>
+            <a href="#" class="project-card__link" target="_blank" rel="noopener">
+              <div class="project-card__img-wrap">
+                <span class="project-card__tag">E-commerce</span>
+                <div class="project-card__img project-card__img--1"></div>
+                <div class="project-card__overlay">
+                  <span class="project-card__cta">Vedi progetto →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Progetto E-commerce</h3>
+                <p class="project-card__desc">Piattaforma e-commerce con carrello, checkout e dashboard admin. Stack: React, Node.</p>
+                <div class="project-card__links">
+                  <span>Demo</span>
+                  <span>GitHub</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="project-card" data-animate>
+            <a href="#" class="project-card__link" target="_blank" rel="noopener">
+              <div class="project-card__img-wrap">
+                <span class="project-card__tag">Dashboard</span>
+                <div class="project-card__img project-card__img--2"></div>
+                <div class="project-card__overlay">
+                  <span class="project-card__cta">Vedi progetto →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">App Dashboard Analytics</h3>
+                <p class="project-card__desc">Dashboard per visualizzazione dati e report. Design system e componenti riutilizzabili.</p>
+                <div class="project-card__links">
+                  <span>Demo</span>
+                  <span>GitHub</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="project-card" data-animate>
+            <a href="https://flowvixlabs.com" class="project-card__link" target="_blank" rel="noopener">
+              <div class="project-card__img-wrap">
+                <span class="project-card__tag">Portfolio / Brand</span>
+                <div class="project-card__img project-card__img--3"></div>
+                <div class="project-card__overlay">
+                  <span class="project-card__cta">Vedi progetto →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Flowvix</h3>
+                <p class="project-card__desc">Agenzia UX/UI Design e Web Development. Siti web performanti, esperienze digitali e soluzioni su misura per aziende e startup.</p>
+                <div class="project-card__links">
+                  <span>Visita il sito →</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__header">
+          <h2 class="section__title" id="contact-title" data-animate>Contatti</h2>
+          <p class="contact__intro" data-animate>Hai un progetto in mente? Scrivimi o contattami direttamente — rispondo in breve.</p>
+        </div>
+        <div class="contact__grid">
+          <div class="contact__info" data-animate>
+            <div class="contact__cards">
+              <a href="https://wa.me/393274597773" class="contact__card" target="_blank" rel="noopener" aria-label="Scrivimi su WhatsApp">
+                <span class="contact__card-icon contact__card-icon--wa" aria-hidden="true"></span>
+                <span class="contact__card-label">WhatsApp</span>
+                <span class="contact__card-value">Scrivi un messaggio</span>
+              </a>
+              <a href="tel:+393274597773" class="contact__card" aria-label="Chiamami">
+                <span class="contact__card-icon contact__card-icon--tel" aria-hidden="true"></span>
+                <span class="contact__card-label">Telefono</span>
+                <span class="contact__card-value">327 459 7773</span>
+              </a>
+              <a href="mailto:salvo.bonavita9808@gmail.com" class="contact__card" aria-label="Invia email">
+                <span class="contact__card-icon contact__card-icon--email" aria-hidden="true"></span>
+                <span class="contact__card-label">Email</span>
+                <span class="contact__card-value">salvo.bonavita9808@gmail.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact__form-wrap" data-animate>
+            <h3 class="contact__form-title">Invia un messaggio</h3>
+            <form class="contact__form" id="contact-form" action="#" method="post" novalidate>
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" required placeholder="Il tuo nome" autocomplete="name">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="tua@email.com" autocomplete="email">
+              <label for="message">Messaggio</label>
+              <textarea id="message" name="message" required placeholder="Scrivi il tuo messaggio..." rows="4"></textarea>
+              <button type="submit" class="btn btn--primary btn--full">Invia messaggio</button>
+              <p class="contact__form-status" id="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top"></div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="footer__name">Nome Cognome</a>
+        <p class="footer__copy">© <span id="year"></span> Tutti i diritti riservati.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Contatti footer">
+        <span class="footer__nav-label">Contatti</span>
+        <ul class="footer__links">
+          <li><a href="https://wa.me/393274597773" class="footer__icon-link" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="footer__icon footer__icon--wa"></span></a></li>
+          <li><a href="tel:+393274597773" class="footer__icon-link" aria-label="Telefono"><span class="footer__icon footer__icon--tel"></span></a></li>
+          <li><a href="mailto:salvo.bonavita9808@gmail.com" class="footer__icon-link" aria-label="Email"><span class="footer__icon footer__icon--email"></span></a></li>
+        </ul>
+      </nav>
+      <a href="#hero" class="footer__back" aria-label="Torna su">↑ Torna su</a>
+    </div>
+  </footer>
+
+  <!-- Bottone fisso Presentazione -->
+  <button type="button" class="presentation-fab" id="presentation-fab" aria-label="Apri presentazione" aria-haspopup="dialog" aria-controls="presentation-modal" title="La mia presentazione">
+    <span class="presentation-fab__label">Presentazione</span>
+  </button>
+
+  <!-- Popup Presentazione -->
+  <div class="presentation-modal" id="presentation-modal" role="dialog" aria-modal="true" aria-labelledby="presentation-title" aria-hidden="true">
+    <div class="presentation-modal__overlay" id="presentation-overlay"></div>
+    <div class="presentation-modal__box">
+      <button type="button" class="presentation-modal__close" id="presentation-close" aria-label="Chiudi presentazione">&times;</button>
+      <h2 class="presentation-modal__title" id="presentation-title">Presentazione</h2>
+      <div class="presentation-modal__content">
+        <p>Non ho scelto il digitale solo per scrivere codice. L'ho scelto perché mi piace costruire qualcosa che abbia un impatto reale.</p>
+        <p>Mi affascina il momento in cui un'idea prende forma: quando da un'esigenza nasce una soluzione concreta, semplice da usare, chiara, efficace. È lì che mi sento nel mio elemento.</p>
+        <p>Sono una persona curiosa, attenta ai dettagli e orientata al miglioramento continuo. Mi piace capire il «perché» dietro ogni scelta, confrontarmi con gli altri e trovare il punto di equilibrio tra estetica, funzionalità e obiettivi di business.</p>
+        <p>Credo nel lavoro di squadra, nel dialogo aperto e nella responsabilità condivisa. Per me un progetto non è solo una task da completare, ma un percorso da costruire insieme.</p>
+        <p>Fuori dallo schermo, porto con me lo stesso approccio: osservare, analizzare, migliorare. Perché il digitale cambia velocemente — e crescere insieme a ciò che facciamo è la parte più stimolante del lavoro.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
