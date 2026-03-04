@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="CV e portfolio di Nome Cognome — Ruolo Professionale. Scopri esperienza, competenze e progetti.">
   <meta name="keywords" content="CV, portfolio, Nome Cognome, sviluppatore, designer, professionista">
   <meta name="author" content="Nome Cognome">
@@ -28,12 +28,17 @@
         <span></span>
         <span></span>
       </button>
+      <div class="navbar__overlay" id="navbar-overlay" aria-hidden="true" tabindex="-1"></div>
       <nav class="navbar__nav" id="navbar-nav" aria-label="Navigazione principale">
-        <a href="#about">About</a>
-        <a href="#skills">Competenze</a>
-        <a href="#experience">Esperienza</a>
-        <a href="#projects">Progetti</a>
-        <a href="#contact">Contatti</a>
+        <div class="navbar__nav-inner">
+          <div class="navbar__nav-handle" aria-hidden="true"></div>
+          <span class="navbar__nav-title">Navigazione</span>
+          <a href="#about">About</a>
+          <a href="#skills">Competenze</a>
+          <a href="#experience">Esperienza</a>
+          <a href="#projects">Progetti</a>
+          <a href="#contact">Contatti</a>
+        </div>
       </nav>
       <button class="theme-toggle" id="theme-toggle" aria-label="Cambia tema chiaro/scuro">
         <span class="theme-toggle__icon" aria-hidden="true"></span>
@@ -409,7 +414,7 @@
     <div class="footer__top"></div>
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#hero" class="footer__name">Nome Cognome</a>
+        <a href="#hero" class="footer__name">Salvatore Bonavita</a>
         <p class="footer__copy">© <span id="year"></span> Tutti i diritti riservati.</p>
       </div>
       <nav class="footer__nav" aria-label="Contatti footer">
