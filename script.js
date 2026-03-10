@@ -129,7 +129,7 @@
     });
   })();
 
-  // ——— Popup Presentazione (bottone fisso + apertura dopo 5 s) ———
+  // ——— Popup Presentazione (bottone fisso + apertura dopo 10 s) ———
   (function initPresentationModal() {
     var modal = document.getElementById('presentation-modal');
     var overlay = document.getElementById('presentation-overlay');
@@ -167,7 +167,7 @@
       if (e.key === 'Escape' && modal && modal.classList.contains('is-open')) closeModal();
     });
 
-    // Apertura automatica dopo 5 secondi (una sola volta per visita)
+    // Apertura automatica dopo 10 secondi (una sola volta per visita)
     setTimeout(function () {
       if (modal && !modal.classList.contains('is-open')) openModal();
     }, 10000);

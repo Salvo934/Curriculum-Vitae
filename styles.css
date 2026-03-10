@@ -2250,16 +2250,13 @@ body.nav-open .navbar {
   pointer-events: none;
 }
 .project-card__img--1 {
-  background: linear-gradient(145deg, #1e2732 0%, #2d3847 35%, #3d4a5c 70%, #4a5568 100%);
-  background-size: 200% 200%;
+  background: #0a0a0a url("SfondoApparel2.png") center / cover no-repeat;
 }
 .project-card__img--2 {
-  background: linear-gradient(145deg, #0f2d4a 0%, #1e4976 40%, #2a6bb0 70%, #3182ce 100%);
-  background-size: 200% 200%;
+  background: #0a0a0a url("SfondoProgetto.png") center / cover no-repeat;
 }
 .project-card__img--3 {
-  background: linear-gradient(145deg, #2e1f5c 0%, #44328a 40%, #5b3da8 70%, #7c5dd4 100%);
-  background-size: 200% 200%;
+  background: #0a0a0a url("SfondoFlowvix.png") center / cover no-repeat;
 }
 .project-card__link:hover .project-card__img {
   transform: scale(1.08);
